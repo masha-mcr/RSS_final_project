@@ -28,6 +28,7 @@ ImageHash = "^4.2.1"
 missingno = "^0.5.1"
 phik = "^0.12.2"
 htmlmin = "^0.1.12"
+mlflow = "^1.25.1"
 
 
 [tool.poetry.dev-dependencies]

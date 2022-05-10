@@ -3,6 +3,7 @@ import numpy as np
 from pandas_profiling import ProfileReport
 import click
 from pathlib import Path
+from typing import Tuple
 
 
 @click.command()
@@ -13,7 +14,7 @@ from pathlib import Path
     type=click.Path(exists=True, dir_okay=False, path_type=Path),
     show_default=True,
 )
-def get_report(data_path):
+def get_report(data_path: Path)-> pd.DataFrame:
     df = pd.read_csv(data_path)
     profile = ProfileReport(df, title="Pandas Profiling Report")
     profile.to_file("profiling_report.html")
@@ -23,7 +24,7 @@ def get_dataset(data_path):
     return df
 
 
-def train_val_split(df, ratio, random_state):
+def train_val_split(df, ratio, random_state)-> Tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
     #click.echo(f"Dataset shape: {dataset.shape}.")
     features = df.drop("target", axis=1)
     target = df["target"]
