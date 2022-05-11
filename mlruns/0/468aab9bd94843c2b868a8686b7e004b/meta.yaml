@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Masha/capstone_project/mlruns/0/468aab9bd94843c2b868a8686b7e004b/artifacts
+end_time: 1652231521480
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 468aab9bd94843c2b868a8686b7e004b
+run_uuid: 468aab9bd94843c2b868a8686b7e004b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1652231520230
+status: 3
+tags: []
+user_id: Masha

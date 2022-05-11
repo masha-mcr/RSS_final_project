@@ -29,6 +29,7 @@ missingno = "^0.5.1"
 phik = "^0.12.2"
 htmlmin = "^0.1.12"
 mlflow = "^1.25.1"
+joblib = "^1.1.0"
 
 
 [tool.poetry.dev-dependencies]
