@@ -1,5 +1,5 @@
 data/
 .ipynb_checkpoints/
 experimenting.ipynb
-*/mlruns/
+mlruns/
 src/capstone_project/__pycache__/
