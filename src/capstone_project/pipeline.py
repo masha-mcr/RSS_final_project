@@ -20,5 +20,7 @@ def create_pipeline(
         pipeline_steps.append(("estimator", DecisionTreeClassifier(random_state=random_state)))
     elif model_alg == 'forest':
         pipeline_steps.append(("estimator", RandomForestClassifier(random_state=random_state, n_jobs=-1)))
+    else: 
+        raise ValueError(f'Unknown model {model_alg}')
     
     return Pipeline(steps=pipeline_steps)

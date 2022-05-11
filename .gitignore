@@ -3,3 +3,4 @@ data/
 experimenting.ipynb
 mlruns/
 src/capstone_project/__pycache__/
+tests/__pycache__/
